@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>BaRu - Belajar Matematika yang Seru</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
+
+    <!-- Web Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            color: #000000;
+            overflow-x: hidden;
+            font-size: 14px;
+        }
+
+        .stabilo {
+            background-color: yellow;
+            padding: 0.2em 0.5em;
+        }
+
+        /* About Section - Home Page
+------------------------------*/
+        .about {
+            --background-color: #f4f4f4;
+        }
+
+        .about .content h3 {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19px;
+            padding: 10px 20px;
+            background: rgb(14, 220, 141);
+            color: rgb(255, 255, 255);
+            border-radius: 7px;
+            display: inline-block;
+        }
+
+        .about .content h2 {
+            font-weight: 700;
+        }
+
+        .about .content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .about .icon-box {
+            padding: 50px 40px;
+            box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: all 0.3s ease-out 0s;
+            background-color: #fff;
+        }
+
+        .about .icon-box i {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            font-size: 32px;
+            line-height: 0;
+            transition: all 0.4s ease-out 0s;
+            background-color: rgb(14, 220, 141);
+            color: white;
+        }
+
+        .about .icon-box h3 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .about .icon-box p {
+            margin-bottom: 0;
+        }
+
+        .about .icon-box:hover i {
+            background-color: rgb(19, 0, 189);
+            color: white;
+        }
+
+        .about .icon-boxes .col-md-6:nth-child(2) .icon-box,
+        .about .icon-boxes .col-md-6:nth-child(4) .icon-box {
+            margin-top: -40px;
+        }
+
+        @media (max-width: 768px) {
+
+            .about .icon-boxes .col-md-6:nth-child(2) .icon-box,
+            .about .icon-boxes .col-md-6:nth-child(4) .icon-box {
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- /End Preloader -->
+
+    <!-- Start Header Area -->
+    <header class="header navbar-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="nav-inner">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/images/logo/baru_logo2.png" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ms-auto">
+                                    <li class="nav-item">
+                                        <a href="index.html" style="text-decoration: none;">
+                                            Beranda
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="materi.html" style="text-decoration: none;">
+                                            Materi
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="latihan_soal.html" style="text-decoration: none;">
+                                            Latihan Soal
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="active" href="tentang.html" style="text-decoration: none;">
+                                            Tentang
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header Area -->
+
+    <section class="courses section" id="materi">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <div class="section-icon wow zoomIn" data-wow-delay=".4s">
+                            <i class="lni lni-pencil-alt"></i>
+                        </div>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Tentang BaRu</h2>
+                    </div>
+                    <nav aria-label="breadcrumb" class="ms-4 mb-4">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html" style="text-decoration: none;">Beranda</a></li>
+                            <li class="breadcrumb-item active">Tentang</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+    </section>
+
+    <!-- About Section - Home Page -->
+    <section id="about" class="about">
+
+        <div class="container mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="row align-items-xl-center gy-5">
+
+                <div class="col-xl-5 content">
+                    <img src="assets/images/logo/baru_logo2.png" alt="" width="100%" class="p-5">
+                    <p>
+                        Website belajar matematika yang interaktif. Membuat belajar matematika menjadi mudah dan seru.
+                    </p>
+<br>
+<div class="row">
+    <div class="col-xl-6">
+        <img src="assets/images/profile/2.jpg" alt="" width="250px" class="rounded-2 shadow-sm ">
+    </div>
+    <div class="col-xl-5 mt-2">
+        <h3>Penulis BaRu</h3>
+        <h2 style="color: #000e20;">Cahayu Ramadhan Putri Nadiya</h2>
+        <p style="color: rgb(3, 39, 158)">
+            S1 Pendidikan Matematika
+        </p>
+        <q>Jadikan matematikamu menjadi penyemangatmu!</q>
+    </div>
+</div>
+                </div>
+                <div class="col-xl-2"></div>
+
+                <div class="col-xl-5">
+                    <div class="row gy-4 icon-boxes">
+
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="icon-box">
+                                <i class="bi bi-trophy"></i>
+                                <h3>BaRu untuk masa depan</h3>
+                                <p>
+                                    Capai mimpi Sobar untuk meraih cita-cita yang tinggi dengan pembelajaran yang seru
+                                    dari BaRu.
+                                </p>
+                            </div>
+                        </div> <!-- End Icon Box -->
+
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="icon-box">
+                                <i class="bi bi-book"></i>
+                                <h3>Materi yang mudah dipahami</h3>
+                                <p>
+                                    Materi yang ringan dan interaktif sehingga mudah dipahami.
+                                </p>
+                            </div>
+                        </div> <!-- End Icon Box -->
+
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                            <div class="icon-box">
+                                <i class="bi bi-code-square"></i>
+                                <h3>Website yang menarik</h3>
+                                <p>
+                                    Buat diri Sobar senyaman mungkin sambil menikmati pembelajaran dengan desain website
+                                    yang menarik.
+                                </p>
+                            </div>
+                        </div> <!-- End Icon Box -->
+
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                            <div class="icon-box">
+                                <i class="bi bi-star-fill"></i>
+                                <h3>Forum Sobar</h3>
+                                <p>
+                                    Mulai langkahmu untuk menggapai mimpi bersama Sobar yang lain.
+                                </p>
+                            </div>
+                        </div> <!-- End Icon Box -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section><!-- End About Section -->
+
+    <!-- Start Newsletter Area -->
+    <section class="newsletter-area section">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-6 offset-lg-3 col-md-12 col-12">
+                    <div class="newsletter-title">
+                        <span></span>
+                        <h2>Bar Sobar so BaRu</h2>
+                        <p>
+                            Langganan untuk mendapatkan informasi terbaru terkait pembaruan website BaRu.
+                        </p>
+                    </div>
+                    <!-- Start Newsletter Form -->
+                    <div class="subscribe-text wow fadeInUp" data-wow-delay=".2s">
+                        <form id="subscription-form" class="newsletter-inner">
+                            <input id="email-input" name="email" placeholder="Ketikkan email aktif Sobar..."
+                                class="common-input" onfocus="this.placeholder = ''"
+                                onblur="this.placeholder = 'Ketikkan email aktif Sobar...'" required="" type="email">
+                            <div class="button">
+                                <button type="submit" class="btn">Berlangganan Sekarang!</button>
+                            </div>
+                        </form>
+
+                        <ul class="newsletter-social">
+                            <li><a href="https://www.instagram.com/cahayurpn"><i class="lni lni-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/cahayurpn/"><i
+                                        class="lni lni-linkedin-original"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- End Newsletter Form -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /End Newsletter Area -->
+
+    <!-- Start Footer Area -->
+    <footer class="footer mt-5">
+        <!-- Start Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="inner">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="left">
+                                <p>Made with 💖 by<a href="https://www.linkedin.com/in/cahayurpn/" rel="nofollow"
+                                        target="_blank"> Cahayu
+                                        Ramadhan</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Middle -->
+    </footer>
+    <!--/ End Footer Area -->
+
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top btn-hover">
+        <i class="lni lni-chevron-up"></i>
+    </a>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("B5stE2k9_O9RxN0EL"); // Ganti "your_user_id" dengan User ID Anda dari EmailJS
+        })();
+
+        document.getElementById('subscription-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            // Mengambil nilai email dari input
+            var userEmail = document.getElementById('email-input').value;
+
+            // Kirim email menggunakan EmailJS
+            emailjs.send("service_0qg70o9", "template_k5rqzhi", {
+                from_name: "BaruTeam",
+                from_email: "noreply@gmail.com",
+                email: userEmail
+            })
+                .then(function (response) {
+                    console.log('Email berhasil dikirim!', response);
+                    alert('Email berhasil dikirim!');
+                }, function (error) {
+                    console.log('Email gagal dikirim!', error);
+                    alert('Email gagal dikirim!');
+                });
+        });
+    </script>
+
+
+    <!-- ========================= JS here ========================= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/count-up.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox"></script>
+    <script>
+        const lightbox = GLightbox({
+            href: 'https://www.youtube.com/watch?v=rJVP7vuWN7g',
+            selector: '#gallery',
+            type: 'video'
+        });
+    </script>
+
+    <script type="text/javascript">
+        document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle').forEach((faqItem) => {
+            faqItem.addEventListener('click', () => {
+                faqItem.parentNode.classList.toggle('faq-active');
+            });
+        });
+    </script>
+</body>
+
+</html>
